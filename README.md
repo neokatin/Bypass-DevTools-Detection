@@ -2,46 +2,45 @@
 
 Tampermonkey userscript that prevents websites from detecting when browser Developer Tools (DevTools) are open. This script is useful for developers, researchers, or curious users who want to inspect web pages without triggering anti-debugging mechanisms.
 
----
+🚫 **Bypass DevTools Detection**
 
-## ⚠️ Disclaimer
+Tampermonkey userscript that prevents websites from detecting when browser Developer Tools (DevTools) are open.
 
-> **This script is intended for educational and ethical use only.**  
-> Do not use this script to bypass protections on websites where such behavior violates terms of service or laws. Always respect the rights of content owners and follow legal and ethical guidelines.
+This script is intended for:
 
----
+- 🧪 Developers debugging anti-debugging behavior  
+- 🕵️‍♀️ Researchers analyzing client-side security  
+- 🧠 Curious learners exploring web technologies
 
-## 🧩 Features
+⚠️ **Disclaimer**
 
-- Blocks `debugger` statements from executing
-- Prevents interception of DevTools hotkeys (F12, Ctrl+Shift+I, etc.)
-- Fakes window dimensions to fool screen size checks
-- Overrides console logging traps
-- Blocks image-based inspection detection
-- Prevents detection via `performance.navigation` reload tracking
+❗ This script is for educational and ethical use only.
 
----
+By installing or using this script, you agree to the following:
 
-## 🚀 Installation
+- ✅ You will not use it to cheat, defraud, or violate website terms of service.  
+- 🚫 You will not deploy it on exam software, secure platforms, or paid services.  
+- ⚖️ You accept full responsibility for any misuse and understand that the author is not liable.
 
-1. **Install Tampermonkey** (if you haven't already):
-   - [Chrome](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
-   - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)
-   - [Edge](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/djjkfojkkfjpjjhchjlgcndkdnedjklp)
+If you're unsure whether it's appropriate to use on a site, don't use it there.
 
-2. **Install the script** via Tampermonkey:
-   - Copy the script from `bypass-devtools-detection.user.js`
-   - Paste it into a new Tampermonkey script tab
-   - Save and enable
+🧩 **Features**
 
----
+- 🛡️ Blocks debugger statements from executing  
+- 🔒 Overrides Function, eval, and console methods to neutralize traps  
+- 🧠 Spoofs window dimensions to trick DevTools detection  
+- 🖼️ Prevents image-based inspection traps  
+- 🏃‍♂️ Bypasses performance timing detection (e.g., reload triggers)  
+- ⛔ Prevents hotkey access detection (e.g., F12, Ctrl+Shift+I)  
+- 🕵️‍♂️ Hides overridden function signatures (via toString spoofing)
+
 
 ## 📜 Script Metadata
 
 ```javascript
 // @name         Bypass DevTools Detection
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  Prevent websites from detecting DevTools (Inspect Element) is open
 // @author       Serial Desegnation J
 // @match        *://*/*
